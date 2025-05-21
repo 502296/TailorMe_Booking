@@ -9,10 +9,35 @@
       background-color: #0f2c44;
       font-family: Arial, sans-serif;
       color: #fff;
-      padding: 30px;
+      padding: 0;
+      margin: 0;
+    }
+    nav {
+      background-color: #1a3b5d;
+      padding: 12px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffc107;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
+      text-decoration: underline;
     }
     h2 {
       color: #ffc107;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #1c3a57;
+      padding: 20px;
+      border-radius: 8px;
     }
     input, select, textarea {
       width: 100%;
@@ -33,13 +58,6 @@
     button:hover {
       background-color: #e0a800;
     }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background-color: #1c3a57;
-      padding: 20px;
-      border-radius: 8px;
-    }
     .message {
       margin-top: 10px;
       padding: 10px;
@@ -57,8 +75,15 @@
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="payment.html">Payment</a>
+  </nav>
+
+  <h2>Book Your Tailoring Appointment</h2>
   <div class="container">
-    <h2>Book Your Tailoring Appointment</h2>
     <form id="bookingForm">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="text" name="phone" placeholder="Phone Number" required />
